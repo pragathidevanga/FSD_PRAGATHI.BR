@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        <script>
+    
+            let p=500;
+            let d=300;
+            let add=(a=p,b=d)=>{
+                return p+d +"<br>";
+            };
+            document.write(`Sum of A = ${p} + B = ${d}: `+ add());
+
+            let sub=(a=p,b=d)=>{
+                return p-d+"<br>";
+            };
+            document.write(`Subtraction of A = ${p} - B = ${d}: `+ sub());
+
+            let mul=(a=p,b=d)=>{
+                return p*d+"<br>";
+            };
+            document.write(`Multiplication of A = ${p} + B = ${d}: `+ mul());
+
+            let div=(a=p,b=d)=>{
+                return p/d+"<br>";
+            };
+            document.write(`Division of A = ${p} / B = ${d}: `+ div());
+
+            let mod=(a=p,b=d)=>{
+                return p%d+"<br>";
+            };
+            document.write(`Modulus of A = ${p} % B = ${d}: `+ mod());
+        </script>
+
+        <h1>Eligibility for Marriage</h1>
+        <script>
+
+            let age = 18;
+            let gender = "female";
+
+            let marriage = (age,gender)=> {
+                if(gender == "male" && age>=21){
+                    return "is eligible for marriage";
+                }
+                else if(gender == "female" && age>=18){
+                    return "is eligible for marriage";
+                }
+                else{
+                    return "is not eligible for marriage";
+                }
+            }
+            document.write(`${age} and ${gender} ${marriage(age, gender)}`);
+        </script>
+    </body>
+</html>

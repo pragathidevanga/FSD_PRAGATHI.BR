@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Document Object Model</title>
+    </head>
+    <body>
+        <h1> Document Object Model </h1>
+        <p id="dom">Welcome to DOM</p>
+        <p id="Me">INTRODUCTION ABOUT MYSELF</p>
+        <button onclick="Change()">Click Me</button>
+        <script>
+            function Change()
+            {
+                document.getElementById('dom').textContent = "HELLO PRAGATHI";
+                document.getElementById('Me').textContent = "MY NAME IS PRAGATHI";
+                document.getElementById('dom').style.color="red";
+            }
+        </script>
+    </body>
+</html>
