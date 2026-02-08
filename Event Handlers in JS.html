@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Event Handlers in JS</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                background: url(./wallpaper.jpg);
+                background-size: cover;
+            }
+            h1{
+                background-color: white;
+                color: black;
+            }
+            fieldset{
+                text-align: center;
+                width: 390px;
+                margin: 100px auto;
+                background-color: lightpink;
+                padding: 15px;
+                box-shadow: 0px 0px 10px 10px white;
+                border-radius: 10px;
+                margin-top: 290px;
+            }
+            label{
+                font-weight: bold;
+                font-size: 20px;
+
+            }
+            input{
+                border-radius: 5px;
+                padding: 6px;
+            }
+            button{
+                color: black;
+                background-color: #fff;
+                box-shadow: 1px 1px 1px 2px darkgray;
+                font-size: 20px;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+            .fail{
+                color: darkred;
+            }
+            .success{
+                color: darkgreen;
+            }
+            h2{
+                color: black;
+            }
+            button:hover{
+                color:  black;
+                background-color: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Event Handlers in JS</h1>
+        <fieldset>
+            <h2>Login Form</h2>
+            <label>Username:</label>
+                <input type="text" id="username"><br><br>
+            <label>Password:</label>
+                <input type="password" id="password"><br><br>
+                <button onclick="Event()">Login</button>
+                <p id="result"></p>
+        </fieldset>
+        <script>
+            function Event()
+            {
+                // alert("Hello Pragathi")
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+
+
+                if(username == "Pragathi" && password == "123")
+                {
+                    document.getElementById("result").innerHTML = "<b class = success>"+"Login Successfully!!✅"+"</b>";                
+                    // document.writeln("Login Successfully!!");
+                }
+                else{
+                    document.getElementById("result").innerHTML = "<b class= fail>"+"Login Failed ❌"+"</b>";
+                    // document.writeln("Login Failed");
+                }
+            }
+        </script>
+    </body>
+</html>
